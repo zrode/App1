@@ -20,7 +20,7 @@ public class PresentationV3 {
         String metierClassName = scanner.nextLine();;
         //Création d'une instance MetierImpl
         Class cMetier = Class.forName(metierClassName);
-        IMetier metier = (IMetier) cMetier.getConstructor(IDao.class).newInstance(dao); // Injection de la dépendance
+        IMetier metier = (IMetier) cMetier.getConstructor(IDao.class).newInstance(dao); // Injection de la dépendance via le constructeur
 
         System.out.println(metier.calcul());
     }
