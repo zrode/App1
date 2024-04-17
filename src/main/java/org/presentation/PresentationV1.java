@@ -4,7 +4,7 @@ import org.dao.DaoImpl;
 import org.dao.IDao;
 import org.metier.MetierImpl;
 
-public class Presentation {
+public class PresentationV1 {
     public static void main(String[] args) {
         // Injection des dépendances par instanciation statique
         MetierImpl metier = new MetierImpl();
