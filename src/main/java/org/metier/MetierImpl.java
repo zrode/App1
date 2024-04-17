@@ -9,6 +9,7 @@ public class MetierImpl implements IMetier {
     public MetierImpl() {
     }
 
+    // Permet d'injecter un objet qui implémente l'interface IDao via le constructeur
     public MetierImpl(IDao dao) {
         this.dao = dao;
     }
@@ -19,7 +20,7 @@ public class MetierImpl implements IMetier {
         return temp*2;
     }
 
-    // Permet d'injecter un objet qui implémente l'interface IDao
+    // Permet d'injecter un objet qui implémente l'interface IDao via le setter
     public void setDao(IDao dao) {
         this.dao = dao;
     }
