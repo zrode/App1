@@ -4,9 +4,9 @@ PrésentationV1 -> injection de dépendance statique via le mutateur (setter)
 
 PrésentationV2 -> injection de dépendance statique via le constructeur
 
-PrésentationV3 -> injection de dépendance dynamique via un fichier de configuration : config.txt
+PrésentationV3 -> injection de dépendance dynamique via un fichier de configuration : config.txt. Dans la réalité, on utilisera des fichiers de configuration XML ou YML
 
-Les versions V1 et V2 présentent un soucis : elles ne sont pas fermées à la modification.
+Les versions V1 et V2 présentent un soucis : elles ne sont pas fermées à la modification (principes SOLID).
 
 Pour ce faire, il faut utiliser l'instanciation dynamique.
 
